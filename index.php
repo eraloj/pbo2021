@@ -34,7 +34,7 @@ $u3 = new User ('username 3','password3');
 
 <html>
  <head>
-   <title>Praktikum 03 - Inheritance
+   <title>Praktikum 04 - Encapsulation
 </title>
  </head>
  <body>

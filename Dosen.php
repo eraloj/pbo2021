@@ -2,8 +2,8 @@
 require_once 'Pegawai.php';
 class Dosen extends Pegawai 
 {
-    public $nidn;
-    public $kerjaan;
+    protected $nidn;
+    protected $kerjaan;
 
     function __construct($nidn,$kerjaan,$nip,$nama,$nh,$gp){
         $this->nidn = $nidn;
@@ -20,6 +20,19 @@ class Dosen extends Pegawai
     }
     public function meneliti (){
         
+    }
+    public function setNidn($nidn){
+        $this->nidn = $nidn;
+    }
+    public function setKerjaan($kerjaan){
+        $this->kerjaan = $kerjaan;
+    }
+    
+    public function getNidn(){
+        return $this->nidn;
+    }
+    public function getKerjaan(){
+        return $this->kerjaan;
     }
 }
 

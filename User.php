@@ -1,8 +1,8 @@
 <?php
 
 class User{
-    public $username;
-    public $password;
+    protected $username;
+    protected $password;
 
 
 function __construct($id,$pasw){
@@ -11,6 +11,21 @@ function __construct($id,$pasw){
 }
 
 public function login(){
+    return "$this->username Successfully log in to the system.";
+}
 
+public function setUsername($id){
+    $this->username = $id;
+}
+public function setPassword($pasw){
+    $this->password = $pasw;
+}
+
+public function getUsername(){
+    return $this->username;
+}
+public function getPassword(){
+    return $this->password;
 }
 }
+
