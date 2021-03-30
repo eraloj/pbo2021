@@ -1,5 +1,6 @@
 <?php
-require_once 'User.php';
+namespace application;
+
 class Pegawai extends User{
  protected $nip;
  protected $nama;
@@ -22,22 +23,22 @@ class Pegawai extends User{
 public function setNama($nama){
   $this->nama = $nama;
 }
-public function setNoHp($no_hp){
+public function setNh($nh){
   $this->no_hp = $nh;
 }
-public function setGajiPokok($gaji_pokok){
+public function setGp($gp){
   $this->gaji_pokok = $gp;
 }
-public function getNip($nip){
+public function getNip(){
   return $this->nip;
 }
-public function getNama($nama){
+public function getNama(){
   return $this->nama;
 }
-public function getNoHp($nh){
+public function getNh(){
   return $this->no_hp;
 }
-public function getGajiPokok($gp){
+public function getGp(){
   return $this->gaji_pokok;
 }
 

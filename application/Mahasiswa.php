@@ -1,5 +1,6 @@
 <?php
-require_once 'User.php';    
+namespace application;    
+
 class Mahasiswa extends User {
  protected $nim;
  protected $nama;
@@ -14,7 +15,8 @@ class Mahasiswa extends User {
  }
  
  public function tampilkanAngkatan(){
-     echo 'Angkatan' .substr($this->nim,5,-4). '<br>';
+    $angkatan = substr($this->nim,5,-4);
+    echo $this->nama.' Angkatan'.$angkatan;
  }
  
  public function tampilkanUmur(){
