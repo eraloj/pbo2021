@@ -1,4 +1,5 @@
 <?php
+namespace application;
 require_once 'Mahasiswa.php';
 class MahasiswaBaru extends Mahasiswa
 {
