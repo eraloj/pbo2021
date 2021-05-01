@@ -1,0 +1,16 @@
+{
+    "name": "user/pbo2021",
+    "description": "Pratikum PBO",
+    "authors": [
+        {
+            "name": "Eraldo",
+            "email": "eraldoaldo43@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4":{
+            "App\\":"application"  
+        }
+    }
+}

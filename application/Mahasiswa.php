@@ -1,11 +1,14 @@
 <?php
-namespace application;    
+namespace App;
 
 class Mahasiswa extends User {
  protected $nim;
  protected $nama;
  protected $tanggal_lahir;
  protected $jenis_kelamin;
+ const AKTIF = 1;
+ const NONAKTIF = 0;
+ public static $status= self::AKTIF;
  
  function __construct($nim,$nama,$tgl,$jk){
    $this->nim = $nim;
@@ -50,6 +53,21 @@ public function getTanggalLahir($tgl){
 }
 public function getJenisKelamin($jk){
     return $this->jenis_kelamin;
+}
+public static function bergerak(){
+    echo "agen solusi , bukan agen perubahan <br/>";
+}
+
+final public function tuntaskan(){
+    self::bergerak();
+    echo"memperbaiki menjadi lebih baik";
+}
+//buat fungsi hitungsks dengan paramater $sks , $bobot dan di return
+//commit dengan "Pratikum 08 - Final Static"
+public static  function hitungsks($sks,$bobot){
+$hitung = $sks * $bobot ;
+echo "SKS anda : ";
+return $hitung;
 }
 
 }

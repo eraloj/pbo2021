@@ -1,5 +1,5 @@
 <?php
-namespace application;
+namespace App;
 
 class Pegawai extends User{
  protected $nip;
