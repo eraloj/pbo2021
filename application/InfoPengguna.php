@@ -6,7 +6,7 @@ class InfoPengguna{
     private $id;
     private $no_hp;
     private $no_wa;
-    private $instagram
+    private $instagram;
 
     public function setId($id)
     {
